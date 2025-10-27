@@ -57,7 +57,7 @@ R implementation and documentation: Michail Tsagris <mtsagris@uoc.gr>.
 }
 
 \seealso{
-\code{ \link{normal.etest}, \link{dcora}
+\code{ \link{normal.etest}, \link{dcorm}
 }
 }
 

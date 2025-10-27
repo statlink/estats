@@ -75,7 +75,7 @@ R implementation and documentation: Michail Tsagris <mtsagris@uoc.gr> and Manos 
 %}
 
 \seealso{
-\code{ \link{pdcor}, \link{dcora}
+\code{ \link{pdcor}, \link{dcorm}
 }
 }
 
