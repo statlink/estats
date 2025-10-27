@@ -1,0 +1,10 @@
+#useDynLib(fsn, .registration = TRUE)
+
+importFrom("Rfast", dcor, edist, dcov, dvar, rep_col, colShuffle)
+importFrom("Rfast2", eqdist.etest, normal.etest, Sample.int)
+importFrom("pdcor", pdcor, pdcor.test, mpdcor, mpdcor.test)
+importFrom("dcov", dcor2d, mdcov)
+importFrom("stats", pchisq)
+
+exportPattern("^[[:alpha:]]+")
+exportPattern("^[^\\.]")

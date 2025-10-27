@@ -1,0 +1,31 @@
+\name{estats-package}
+\alias{estats-package}
+\docType{package}
+\title{
+Fast and Light-Weight Energy Statistics
+}
+\description{
+Description: Fast and memory-less computation of the energy statistics related quantities for vectors and matrices.
+}
+\details{
+\tabular{lll}{
+Package: \tab estats\cr
+Type: \tab Package\cr
+Version: \tab 1.0\cr
+Date: \tab 2025-10-27\cr
+License: \tab GPL-2\cr
+}
+}
+\author{
+Michail Tsagris \email{mtsagris@uoc.gr} and Manos Papadakis \email{papadakm95@gmail.com}.
+}
+
+\section{Maintainers}{
+Michail Tsagris \email{mtsagris@uoc.gr}.
+}
+
+%\references{
+%}
+
+
+
