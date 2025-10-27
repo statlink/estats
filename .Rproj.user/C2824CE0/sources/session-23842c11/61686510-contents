@@ -1,0 +1,12 @@
+#[export]
+dcora <- function(x, bc = FALSE) {
+  p <- dim(x)[2]
+  a <- matrix(0, p, p)
+  if ( bc )  {
+    type <- "U"
+  } else  type <- "V"
+  for ( i in 1:c(p - 1) )
+    a[i, -(1:i)] <- a[-c(1:i), i] <- dcov::mdcor(x[, i], x[, -c(1:i)], type = type)
+  diag(a) <- 1
+  a
+}
