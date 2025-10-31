@@ -28,7 +28,7 @@ The number of projections to perform.
 }
 
 \details{
-The approximate distance covariance of Huand and Huo (2022) is computed.
+The approximate distance covariance of is computed.
 }
 
 \value{
@@ -42,7 +42,7 @@ by Correlation of Distances. Annals of Statistics, 35(6):2769--2794.
 Szekely G. J. and Rizzo M. L. (2023). The Energy of Data and Distance Correlation.
 Chapman and Hall/CRC.
 
-Huang C. and Huo X. (2022). A statistically and numerically efficient independence test based on random projections and distance covariance. Frontiers in Applied Mathematics and Statistics, 7: 779841.
+Huang Cheng and Huo Xiaoming (2022). A statistically and numerically efficient independence test based on random projections and distance covariance. Frontiers in Applied Mathematics and Statistics, 7: 779841.
 
 Tsagris M. and Papadakis M. (2025). Fast and light-weight energy statistics using the R package Rfast.
 https://arxiv.org/abs/2501.02849
@@ -51,14 +51,14 @@ https://arxiv.org/abs/2501.02849
 \author{
 Michail Tsagris and Manos Papadakis.
 
-R implementation and documentation: Michail Tsagris <mtsagris@uoc.gr>.
+R implementation and documentation: Michail Tsagris <mtsagris@uoc.gr> and Manos Papadakis <papadakm95@gmail.com>.
 }
 %\note{
 %%  ~~further notes~~
 %}
 
 \seealso{
-\code{ \link{adcov}, \link{adcov.test}
+\code{ \link{pdcor}, \link{dcorm}
 }
 }
 
