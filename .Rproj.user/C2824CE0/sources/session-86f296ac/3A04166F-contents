@@ -4,7 +4,7 @@ importFrom("Rfast", dcor, edist, dcov, dvar, Rnorm)
 importFrom("Rfast2", eqdist.etest, normal.etest)
 importFrom("pdcor", pdcor, pdcor.test, mpdcor, mpdcor.test)
 importFrom("dcov", dcor2d, dcov2d, mdcov)
-importFrom("stats", pchisq, pt)
+importFrom("stats", pchisq)
 
 exportPattern("^[[:alpha:]]+")
 exportPattern("^[^\\.]")

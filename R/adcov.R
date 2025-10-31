@@ -1,0 +1,17 @@
+adcov <- function(x, y, bc = FALSE, K = 100) {
+  px <- dim(x)[2]  ;  py <- dim(y)[2]
+  cx <- sqrt(pi) * gamma( 0.5 * (px + 1) ) / gamma(0.5 * px)
+  cy <- sqrt(pi) * gamma( 0.5 * (py + 1) ) / gamma(0.5 * py)
+  dv <- numeric(K)
+  type <- "V"
+  if ( bc )  type = "U"
+  for ( i in 1:K ) {
+    zx <- Rfast::Rnorm(px)  ;  zx <- zx / sqrt( sum(zx^2) )
+    zy <- Rfast::Rnorm(py)  ;  zy <- zy / sqrt( sum(zy^2) )
+    xp <- as.vector( x %*% zx )  ;  yp <- as.vector( y %*% zy )
+    dv[i] <- dcov::dcov2d(xp, yp, type = type)
+  }
+  dc <- cx * cy * mean(dv)
+  if ( !bc )  dc <- sqrt(dc)
+  dc
+}

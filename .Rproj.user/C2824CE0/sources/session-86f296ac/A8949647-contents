@@ -35,7 +35,19 @@ The distance variance of a matrix/vector, the distance covariance or distance co
 \value{
 The distance covariance or the distance variance.
 
-For the distance correlation a vector with the distance covariance, the distance variance of x, the distance variance of Y and the distance correlation.
+For the distance correlation a list including:
+\item{dcov}{
+The distance covariance.
+}
+\item{dvarX}{
+The distance variance of x.
+}
+\item{dvarY}{
+The distance variance of Y.
+}
+\item{dcor}{
+The distance correlation.
+}
 }
 
 \references{

@@ -1,41 +1,38 @@
-\name{Distance variance, covariance and correlation}
-\alias{dvar}
-\alias{dcov}
-\alias{dcor}
+\name{Approximate distance variance}
+\alias{adcov}
 \title{
-Distance variance, covariance and correlation
+Approximate distance variance
 }
 
 \description{
-Distance variance, covariance and correlation.
+Approximate distance variance.
 }
 
 \usage{
-dvar(x, bc = FALSE)
-dcov(x, y, bc = FALSE)
-dcor(x, y, bc = FALSE)
+adcov(x, y, bc = FALSE, K = 100)
 }
 
 \arguments{
 \item{x}{
-A numerical matrix or a vector.
+A numerical matrix.
 }
 \item{y}{
-A numerical matrix or a vector.
+A numerical matrix.
 }
 \item{bc}{
 If you want the bias-corrected distance correlation set this equal to TRUE.
 }
+\item{K}{
+The number of projections to perform.
+}
 }
 
 \details{
-The distance variance of a matrix/vector, the distance covariance or distance correlation of two matrices is calculated. For the dcov() and dcor(), if x and y are matrices, they must have the same dinmensions. We have  optimized the code, using the formulas provided in Szekely and Rizzo (2023), but only for the case that both matrices are of the same dimensionality.
+The approximate distance covariance of is computed.
 }
 
 \value{
-The distance covariance or the distance variance.
-
-For the distance correlation a vector with the distance covariance, the distance variance of x, the distance variance of Y and the distance correlation.
+The approximate distance covariance.
 }
 
 \references{
@@ -44,6 +41,8 @@ by Correlation of Distances. Annals of Statistics, 35(6):2769--2794.
 
 Szekely G. J. and Rizzo M. L. (2023). The Energy of Data and Distance Correlation.
 Chapman and Hall/CRC.
+
+Huang Cheng and Huo Xiaoming (2022). A statistically and numerically efficient independence test based on random projections and distance covariance. Frontiers in Applied Mathematics and Statistics, 7: 779841.
 
 Tsagris M. and Papadakis M. (2025). Fast and light-weight energy statistics using the R package Rfast.
 https://arxiv.org/abs/2501.02849
